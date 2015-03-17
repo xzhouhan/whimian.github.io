@@ -1,578 +1,82 @@
-<!--
-@version   1.0 | December 20, 2011
-@author    Mihai Balea http://www.mihaibalea.info | http://www.templatesbook.com
-@copyright Copyright (C) 2012 TemplatesBook
-@license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Yu Hao</title>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"> 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="Lang" content="en"/>
-<meta name="author" content="Mihai Balea"/>
-<meta http-equiv="Reply-to" content="contact@mihaibalea.info"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<title>Yu Hao | Personal Portfolio</title>
+  <body>
+    <div>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Yu Hao</a>
+          </div>
 
-<link href="favicon.ico" type="image/gif" rel="icon" />
-<link id="mainCSS" rel="stylesheet" type="text/css" href="css/style.css"/>
-<link id="mainCSS" rel="stylesheet" type="text/css" href="css/skins.css"/>
-<link rel="stylesheet" type="text/css" href="css/skin.css" />
-
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-
-<script charset="utf-8" type="text/javascript" src="js/jquery.1.4.2.min.js"></script>
-<script type= "text/javascript" src="js/queryLoader.js" ></script>
-<script type="text/javascript" src="js/jquery.backgroundposition.js"></script>
-<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
-<script type="text/javascript" src="js/sp.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/skins.js"></script>
-
-</head>
-
-<body id="body_pat" class="red">
-<div id="wrapper">
-<!------------------------- TOOLS -->
-    
-    <div id="tools">
-        <div id="but_expand">+</div>
-        <div id="but_collapse">-</div>
-        <span>SKINS</span>
-        <div class="clear"></div>
-        <div id="toolsHolder">
-            <div id="palette">
-                <div id="c_red" class="selected"></div>
-                <div id="c_blue"></div>
-                <div id="c_green"></div>
-                <div id="c_pink"></div>
-                <div id="c_orange"></div>
-                <div id="c_gray"></div>
-            </div>
-            <div id="patterns">
-                <div id="pat_1" class="selected"></div>
-                <div id="pat_2"></div>
-                <div id="pat_3"></div>
-                <div id="pat_4"></div>
-                <div id="pat_5"></div>
-            </div>
-        </div>
-    </div><!-- end div #tools -->
-
-<!------------------------- NAVIGATION -->
-
-    <div id="navbarHolder">
-        <div id="navbar">
-            <ul>
-                                
-                <li><a id="nav_about" href="#about">ABOUT<span class="m_w">ABOUT</span><span class="m_r">ABOUT</span></a></li>
-                <li><a id="nav_work" href="#work">WORK<span class="m_w">WORK</span><span class="m_r">WORK</span></a></li>
-                <li><a id="nav_projects" href="#projects">Projects<span class="m_w">Projects</span><span class="m_r">Projects</span></a></li>
-                <li><a id="nav_contact" href="#contact">Contact<span class="m_w">Contact</span><span class="m_r">Contact</span></a></li>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Me <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://www.facebook.com/profile.php?id=1728350858">Facebook</a></li>
+                  <li><a href="https://twitter.com/yuhao8905">Twitter</a></li>
+                  <li><a href="http://www.linkedin.com/profile/view?id=205837030">Linkedin</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://weibo.com/whimsicalyuhao">微博</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
             </ul>
-        </div>
-    </div><!-- end div #navbarHolder -->
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search" aria-label="Search"></span>
+              </button>
+            </form>
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
 
-<!------------------------- CONTENT -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Problem Solved!</h1>
+        <p> My Name is "Hao". When you have a problem, just come to me and ask "How"!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
     
-    <div id="container">
-        <div id="logo" title="Yu Hao" class="site-message-absolute">
-            <div class="nav_logo_w"></div>
-        </div>
-
-<!------------------------- ABOUT -->
-        
-        <div id="about">
-            <a id="logo_big" title="John Doe" href="index.html"></a>
-            <div id="headline" class="left grid">
-                <h1>Yu Hao</h1>
-                <h2><span>Geophysicist</span><br /><a href="mailto:yuhao8905@gmail.com">yuhao8905@gmail.com</a></h2>
-            </div>
-            <div id="about_pict" class="grid"><img src="images/my_picture.jpg" alt="Mihai Balea | Portfolio" /></div>
-            <div class="clear">&nbsp;</div>
-            <div class="left grid"></div>
-            <div class="left grid about_text">
-				<p>
-					I am currently a PhD student at Institute of Geophysics and Geomatics, China University of GeoSciences.
-				</p>
-            </div>
-            <div class="right grid about_text">
-				<p>
-					As a geophysicist, petroleum geologist, I have experiences in using the following programming languages and GeoScience softwares:
-					<ul>
-					<li><strong>C/C++</strong></li>
-					<li><strong>Python/NumPy/SciPy</strong></li>
-					<li><strong>Matlab</strong></li>
-					<li><strong>Madagascar</strong></li>
-					<li><strong>Opendtect</strong></li>
-					<li><strong>JewelEarth</strong></li>
-					</ul>
-				</p>
-            </div>
-			<div class="clear"></div>
-		</div><!-- end div #about -->
-
-        <div class="clear"></div>
-
-<!------------------------- WORK -->
-
-        <div id="work">
-            <h2>Work.</h2>
-            <div class="projectsContainer">
-                <div id="project" class="item_details">
-                    <div class="slide_inner"></div>
-                	<div class="next_slide">&nbsp;</div>
-                    <div class="prev_slide">&nbsp;</div>
-<!-- WORK 1 -->
-                    <div class="prjinfo" id="iit_1">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_1 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 1" /></li>
-                                <li class="iit_1 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 1" /></li>
-                                <li class="iit_1 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 1" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 1</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.</p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Drupal 7 - Content Management</li>
-                            </ul>
-                            <h5>Year: <span>2011</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <a href="http://www.templatesbook.com" title="My Work 1" target="_blank" class="btn_see_it_live">See it live</a>
-                            <div class="close_item_info">&nbsp;</div>
-                        </div>
-                    </div><!-- end div #iit_1 -->
-<!-- WORK 2 -->
-                    <div class="prjinfo" id="iit_2">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_2 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 2" /></li>
-                                <li class="iit_2 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 2" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 2</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client name</span></h5>
-                            <a href="http://www.templatesbook.com" title="My Work 2" target="_blank" class="btn_see_it_live">See it live</a>
-                            <div class="close_item_info">&nbsp;</div>
-                            
-                        </div>
-                    </div><!-- end div #iit_2 -->
-<!-- WORK 3 -->         
-                    <div class="prjinfo" id="iit_3">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_3 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 3" /></li>
-                                <li class="iit_3 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 3" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 3</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Images Editing</li>
-                                <li>Information Architecture</li>
-                            </ul>
-                            <h5>Year: <span>2008</span></h5>
-                            <h5>Client: <span>Client name</span></h5>
-                            
-                            <div class="close_item_info">&nbsp;</div>
-                            
-                        </div>
-                    </div><!-- end div #iit_3 -->
-<!-- WORK 4 -->     
-                    <div class="prjinfo" id="iit_4">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_4 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 4" /></li>
-                                <li class="iit_4 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 4" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 4</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                                <li>Images Editing</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <a href="http://www.templatesbook.com" title="My Work 4" target="_blank" class="btn_see_it_live">See it live</a>
-                            <div class="close_item_info">&nbsp;</div>
-                            
-                        </div>
-                    </div><!-- end div #iit_4 -->
-<!-- WORK 5 -->     
-                    <div class="prjinfo" id="iit_5">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_5 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 5" /></li>
-                                <li class="iit_5 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 5" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 5</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>Logo Design</li>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                            </ul>
-                            <h5>Year: <span>2009</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <a href="http://www.templatesbook.com" title="My Work 5" target="_blank" class="btn_see_it_live">See it live</a>
-                            <div class="close_item_info">&nbsp;</div>
-                            
-                        </div>
-                    </div><!-- end div #iit_5 -->
-<!-- WORK 6 -->     
-                    <div class="prjinfo" id="iit_6">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_6 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 6" /></li>
-                                <li class="iit_6 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 6" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 6</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>Logo Design</li>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Images Editing</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <a href="http://www.templatesbook.com" title="My Work 6" target="_blank" class="btn_see_it_live">See it live</a>
-                            <div class="close_item_info">&nbsp;</div>
-                            
-                        </div>
-                    </div><!-- end div #iit_6 -->
-<!-- WORK 7 -->     
-                    <div class="prjinfo" id="iit_7">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_7 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 7" /></li>
-                                <li class="iit_7 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 7" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 7</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>Logo Design</li>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <div class="close_item_info">&nbsp;</div>
-                        </div>
-                    </div><!-- end div #iit_7 -->
-<!-- WORK 8 -->     
-                    <div class="prjinfo" id="iit_8">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_8 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 8" /></li>
-                                <li class="iit_8 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 8" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 8</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>Logo Design</li>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <div class="close_item_info">&nbsp;</div>
-                        </div>
-                    </div><!-- end div #iit_8 -->
-<!-- WORK 9 -->     
-                    <div class="prjinfo" id="iit_9">
-                        <div class="item_slider">
-                            <ul>
-                                <li class="iit_9 pic selected"><img src="images/projects/slide_w1_1.jpg" alt="My Work 9" /></li>
-                                <li class="iit_9 pic"><img src="images/projects/slide_w1_1.jpg" alt="My Work 9" /></li>
-                            </ul> 
-                        </div>
-                        <div class="item_text">
-                            <h3>My Work 9</h3>
-                            <div class="clear"></div>
-                            <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit.
-                            </p>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                            </ul>
-                            <h5>Year: <span>2010</span></h5>
-                            <h5>Client: <span>Client Name</span></h5>
-                            <div class="close_item_info">&nbsp;</div>
-                        </div>
-                    </div><!-- end div #iit_9 -->
-                </div><!-- end div #project -->
-                
-<!-- WORKS GRID -->
-
-            	<div class="prjGrid">
-                	<div id="it_1" class="item" >
-                    	<img src="images/projects/thumb_w1.jpg" alt="My Work 1" />
-                        <span class="hover">
-                        	<span class='h3'>My Work 1</span>
-                        </span>
-                    </div>
-                    <div id="it_2" class="item">
-                    	<img src="images/projects/thumb_w1.jpg" alt="My Work 2" />
-                        <span class="hover">
-                            <span class='h3'>My Work 2</span>
-                        </span>
-                    </div>
-                    <div id="it_3" class="item last">
-                    	<img src="images/projects/thumb_w1.jpg" alt="My Work 3" />
-                        <span class="hover">
-                            <span class='h3'>My Work 3</span>
-                        </span>
-                    </div>
-                    <div id="it_4" class="item" >
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 4" />
-                        <span class="hover">
-                            <span class='h3'>My Work 4</span>
-                        </span>
-                    </div>
-                    <div id="it_5" class="item">
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 5" />
-                        <span class="hover">
-                            <span class='h3'>My Work 5</span>
-                        </span>
-                    </div>
-                    <div id="it_6" class="item last">
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 6" />
-                        <span class="hover">
-                            <span class='h3'>My Work 6</span>
-                        </span>
-                    </div>
-                    <div id="it_7" class="item" >
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 7" />
-                        <span class="hover">
-                            <span class='h3'>My Work 7</span>
-                        </span>
-                    </div>
-                    <div id="it_8" class="item">
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 8" />
-                        <span class="hover">
-                            <span class='h3'>My Work 8</span>
-                        </span>
-                    </div>
-                    <div id="it_9" class="item last">
-                        <img src="images/projects/thumb_w1.jpg" alt="My Work 9" />
-                        <span class="hover">
-                            <span class='h3'>My Work 9</span>
-                        </span>
-                    </div>
-                </div><!-- end div .prjGrid -->
-				
-            </div><!-- end div .projectsContainer -->
-          <div class="clear"></div>  
-        </div><!-- end div #work -->
-        <div class="clear"></div>
-        
-<!------------------------- PROJECTS -->
-        
-        <div id="projects">
-            <h2>Projects.</h2>
-            <div class="projectsContainer">
-<!-- PROJECT 1 -->
-                <div class="pprj">
-                    <div class="grid left">
-                        <div class="item">
-                            <img src="images/projects/thumb_p1.jpg" alt="Project Name 1" />
-                            <a class="hover" href="http://www.templatesbook.com" title="Project Name 1" target="_blank"><span class='h3'>Project Name 1</span></a>
-                        </div>    
-                    </div>
-                    <div class="item_text">
-                        <h3>Project Name 1</h3>
-                            <div class="clear"></div>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>User Interface Design</li>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                                <li>Information Architecture</li>
-                                <li>Images Editing</li>
-                                <li>Themes Creator</li>
-                                <li>Administrator</li>
-                            </ul>
-                            <a href="http://www.templatesbook.com" title="Project Name 1" target="_blank" class="btn_see_it_live">www.sitename.com</a>
-                    </div>
-                    <div class="item_text second">
-                        <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis.
-                            </p>
-                            <h5>Year: <span>2011</span></h5>
-                    </div>
-                </div><!-- end div .pprj -->
-<!-- PROJECT 2 -->
-                <div class="pprj">
-                    <div class="grid left">
-                        <div class="item">
-                            <img src="images/projects/thumb_p1.jpg" alt="Project Name 2" />
-                            <a class="hover" href="http://www.templatesbook.com" title="Project Name 2" target="_blank"><span class='h3'>Project Name 2</span></a>
-                        </div>    
-                    </div>
-                    <div class="item_text">
-                        <h3>Project Name 2</h3>
-                            <div class="clear"></div>
-                            <h4>My Contribution:</h4>
-                            <ul>
-                                <li>HTML/CSS</li>
-                                <li>Wordpress - Content Management</li>
-                                <li>Information Architecture</li>
-                                <li>Images Editing</li>
-                                <li>Author</li>
-                                <li>Administrator</li>
-                            </ul>
-                            <a href="http://www.templatesbook.com" title="Project Name 2" target="_blank" class="btn_see_it_live">www.sitename.com</a>
-                    </div>
-                    <div class="item_text second">
-                        <h4>Overview:</h4>
-                            <div class="clear"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis volutpat felis quis suscipit. Fusce suscipit auctor urna quis mattis.
-                            </p>
-                            <h5>Year: <span>2011</span></h5>
-                    </div>
-                </div><!-- end div .pprj -->
-            </div><!-- end div .projectsContainer -->
-            <div class="clear"></div>
-        </div><!-- end div #projects -->
-
-        <div class="clear"></div>
-<!------------------------- CONTACT -->
-        <div id="contact">
-            <h2>Contact.</h2>
-            <div class="clear"></div>
-            <div class="contactContainer">
-                <h3>Get in touch:</h3>
-            	<div class="contact">
-                    <form action="#" method="post" id="contactForm">
-                    <ul>
-                    <li>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" value="" id="name" />
-                    </li>
-                    <li>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" value="" id="email" />
-                    </li>
-                    <li>
-                    <label for="tele">Telephone:</label>
-                    <input type="text" name="tele" value="" id="tele" />
-                    </li>
-                    <li class="special" style="display: none;">
-                    <label for="last">Don't fill this in:</label>
-                    <input type="text" name="last" value="" id="last" />
-                    </li>
-                    <li>
-                    <label for="message">Message:</label><textarea rows="5" name="message"></textarea>
-                    </li>
-                    <li class="submitbutton">
-                    <input type="submit" class="btn" value="Send Message" />
-                    </li>
-                    </ul>
-                    </form>
-                </div>
-                <div class="message"><div id="alert"></div></div>
-				<p style="margin-top: 30px;">@Copyright 2011-2012 <a href="http://www.tempaltesbook.com">Templatesbook.com</a> | Developed&Designed by <a href="http://www.mihaibalea.info">Mihai Balea</a> | <a href="http://www.arownd.net">Blog</a></p>
-            </div><!-- end div .contactContainer -->
-            <div class="contact_social grid">
-                <span><span class="address">&nbsp;</span>388 Lumo Rd, Wuhan, China</span>
-                <div class="clear"></div>
-                <span><span class="phone">&nbsp;</span>*** **** ****</span>
-                <div class="clear"></div>
-                <span><span class="email">&nbsp;</span>yuhao89@live.cn</span>
-                <div class="clear"></div>
-                <span><a href="https://www.facebook.com/profile.php?id=1728350858" class="facebook"></a>于浩</span>
-                <div class="clear"></div>
-                <span><a href="https://twitter.com/Jason_Prinston" class="twitter"></a>于浩</span>
-                <div class="clear"></div>
-                <span><a href="http://cn.linkedin.com/pub/hao-yu/58/b26/79a/" class="linkedin"></a>于浩</span>
-                <div class="clear"></div>
-                <a href="#" class="gmail"></a>
-            </div><!-- end div .contact_social -->
-            <div class="clear"></div>
-			
-			
-           <div id="btn_top"></div> 
-        </div><!-- end div #contact -->
-    </div><!-- end div #container -->
-</div><!-- end div #wrapper -->
-
-<script type='text/javascript'>
-    QueryLoader.init();
-</script>
-
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
 </html>
