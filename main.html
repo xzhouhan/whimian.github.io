@@ -1,0 +1,60 @@
+<html>
+	
+<head>
+	<title>Ancient Greece</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>	
+</head>
+
+<body>
+	<div id="navbar">
+		<div>
+			<a href="main.html">Home</a>
+			<a href="html/articles.html">Articles</a>
+			<a href="html/researches.html">Researches</a>
+			<a href="html/projects.html">Projects</a>
+		</div>
+	</div>
+	<div id="main-part">
+		<div class="article" id="article-0">
+			<h2>PREFACE</h2>
+			<p>This book is designed to share with readers a rich and complex vision of ancient Greece that has been forged by the collaboration of four scholars with different backgrounds and varying interests. We undertook it because of our frustration in the search for a single volume that provided readers with a comprehensive history of Greek civilization from its first beginnings in the second millennium BC through the Hellenistic era. It has been more than a quarter of a century since the last attempt to tell this story in depth; all recent textbooks have either focused on political and military developments or omitted the Hellenistic era. We hope that what we have written will be useful and will give pleasure both to the general reader and to the student who is asked to read it in college. We have strived for a pace and a length that are suitable for a course lasting for a semester or a quarter devoted to the history and civilization of Greece--long enough to provide depth and detail, and short enough to enable the instructor to assign primary sources that will expand the student's understanding of a world that is both familiar and alien. Incorporating the fruits of the most recent scholarship, we have aimed for a balance between political, military, social, cultural, and economic history. The Athenian lawgiver Solon, who sought to reconcile the feuding political parties of his day, lamented that in trying to please everybody he seemed to have pleased nobody. We are optimistic that we will not be driven to such lamentations by the challenges we faced in our quest to integrate the various aspects of Greek civilization.</p>
+		</div>
+		<div class="article" id="article-1">
+			<h2>I EARLY GREECE AND THE BRONZE AGE</h2>
+			<p>One of the greatest of the Greek cultural heroes was Odysseus, a man who "saw the towns of many men and learned their minds, and suffered in his heart many griefs upon the sea . . ." ( Odyssey 1.3-4). Like their legendary hero, the Greeks were irresistibly drawn to distant shores. From early in their history and continually throughout antiquity they ventured over the seas to foreign lands seeking their fortunes as traders, colonizers, and mercenary soldiers. Their limited natural resources forced the Greeks to look outward, and they were fortunate in being within easy reach of the Mediterranean shores of Asia, Africa, and Europe. By the fifth century BC, they had planted colonies from Spain to the west coast of Asia and from north Africa to the Black Sea. The philosopher Plato (c. 429-347 BC) likened the hundreds of Greek cities and towns that ringed the coasts of the Mediterranean and Black seas to "frogs around a pond" ( Phaedo 109b). Those far-flung Greeks left a priceless legacy of achievements in art, literature, politics, philosophy, mathematics, science, and war. Their story is a long and fascinating one.</p>
+			<img src="http://artseverydayliving.com/blog/wp-content/uploads/2010/09/Monet-blog-water-lilies-Japanese-bridge.jpg" alt="Monet - Water Lily">
+		</div>
+		
+	</div>
+	<div id="sidebar">
+		<ul id="contents">
+			<li>Home</li>
+			<li>Articles</li>
+			<li>Researches</li>
+			<li>Projects</li>
+		</ul>
+	</div>
+
+	<div id="footbar">
+		<p>E-mail: yuhao89@live.cn</p>
+	</div>
+	<script type="text/javascript">
+		var contentEls = document.getElementById("contents");
+		console.log(contentEls);
+		var articleEls = document.getElementsByClassName("article");
+		console.log(articleEls);
+		for (var i = 0; i < articleEls.length; i++) {			
+			var contentsEl = document.createElement("li");
+			console.log(contentsEl);
+			var linkEl = document.createElement("a");
+			linkEl.href = "#" + articleEls[i].id;
+			var txt = document.createTextNode(articleEls[i].id);
+			linkEl.appendChild(txt);
+			contentsEl.appendChild(linkEl);
+			contentEls.appendChild(contentsEl);
+		};
+	</script>
+	
+</body>
+
+</html>
