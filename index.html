@@ -6,8 +6,8 @@
 </head>
 
 <body>
-	<div id="navbar">
-		<div>
+	<div id="navbar">		
+		<div>			
 			<a href="index.html">Home</a>
 			<a href="html/articles.html">Articles</a>
 			<a href="html/researches.html">Researches</a>
@@ -27,6 +27,9 @@
 		
 	</div>
 	<div id="sidebar">
+		<div id="animation">
+			<div id="circle"></div>
+		</div>
 		<ul id="contents">
 			<li>Home</li>
 			<li>Articles</li>
@@ -53,6 +56,19 @@
 			contentsEl.appendChild(linkEl);
 			contentEls.appendChild(contentsEl);
 		};
+		var startTime = new Date().getTime()
+		var speed = 200;
+		var sineAnimation = function() {
+			var yu_point = document.getElementById("circle");
+			var currentTime = new Date().getTime()
+			var timeLapsed = (currentTime - startTime)/1000;
+			var newY = Math.sin(timeLapsed * speed * 2 / 100);
+			var newX = timeLapsed * speed / 6;
+			yu_point.style.left = newX + "px";
+			yu_point.style.top = (50 - 30 * newY) + "px";
+			window.requestAnimationFrame(sineAnimation);
+		}
+		sineAnimation();
 	</script>
 	
 </body>

@@ -79,3 +79,19 @@ img {
 ul a {
 	color: black;
 }
+
+#animation {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+#circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: black;
+	position: relative;
+	left: 0px;
+	top: 50px;
+}
