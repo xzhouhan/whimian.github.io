@@ -36,22 +36,24 @@
         <div class="downloads">
         </div>
         <hgroup>
-          <h1>North Shore</h1>
-          <h2 class="tagline"></h2>
+          <h1>不同系统的endOfLine问题</h1>
+  <footer class="article-footer">
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/yuhao.html">yuhao</a>
+    </address>
+    <abbr class="published" title="2016-11-26T16:20:00+08:00">
+       on 26.11.2016
+    </abbr>
+  </footer><!-- /.post-info -->
         </hgroup>
+  
+
+
+
       </header>
-<section id="content">
-<ul id="post-list">
-        <li><article class="hentry">
-            <header class="article-list"> <h2 class="entry-title"><a href="/bu-tong-xi-tong-de-endoflinewen-ti.html" rel="bookmark" title="link to 不同系统的endOfLine问题">不同系统的endOfLine问题</a></h2>
-                <footer class="post-info">
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/yuhao.html">yuhao</a>
-                    </address>
-                    <abbr class="published" title="2016-11-26T16:20:00+08:00">  on 26.11.2016 </abbr>
-                </footer><!-- /.post-info -->
-	    </header>
-                <div class="entry-content"> <p>最近由于要参加老师要求参加的中海油举办的$\pi-Frame$软件编程比赛，准备复习一下C++，结果在使用<code>cin.getline()</code>接受输入时发现得到的<code>string</code>长度有问题，导致比较的时候不能得到预期结果。。。</p>
+<section id="content" class="body article">
+  <div class="entry-content">
+    <p>最近由于要参加老师要求参加的中海油举办的$\pi-Frame$软件编程比赛，准备复习一下C++，结果在使用<code>cin.getline()</code>接受输入时发现得到的<code>string</code>长度有问题，导致比较的时候不能得到预期结果。。。</p>
 <p><img alt="打字机" src="/images/green_typewriter.jpg"></p>
 <p>经过一番纠结，结果发现原来还是end of line问题。如果看过老式打印机就会知道，打字的时候想要换行要进行两个操作，一个是LF（line feed），就是拧旋钮把纸张向上移动一行；另一个是CR（carriage return），就是板一下把手把打字的那个头移动到一行的最前面。在ASCII码中，LF对应着10，而CR对应着13，一般用字符表示成<code>'\n'</code>和<code>'\r'</code>。</p>
 <table>
@@ -86,13 +88,26 @@
 </thead>
 <tbody>
 <tr>
-<td>'\n\r' …</td></tr></tbody></table> </div><!-- /.entry-content -->
-        </article></li>
-</ul><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-</section><!-- /#content -->
+<td>'\n\r'</td>
+<td>'\n'</td>
+<td>'\r'</td>
+</tr>
+</tbody>
+</table>
+<p>因此，文本文件在不同系统下创建和使用时就会出现不兼容的问题。</p>
+<p>我的问题是，我在Windows上使用Cygwin，将gcc作为编译器，在输入字符时，接受的字符串是以<code>'\n\r'</code>结尾的，而<code>getline()</code>则以<code>'\n'</code>结尾的方式对其进行处理。</p>
+<p>解决的办法是在<code>getline()</code>中特别指定结束符，<code>getline(cin, text, '\r')</code>，可是这么写的代码在别的情形下貌似会出问题。期待有更加完美的解决方法。</p>
+  </div><!-- /.entry-content -->
+  <div class="article-share-tags">
+  <div class="end-article-tags">
+  </div>
+  <div class='article-share'>
+      share -
+  </div>
+  </div>
+</section>
+<div class="neighbors">
+</div>
       <footer>
 	  <a href="/pages/about.html" >About</a>
 	  <div class="right-footer">
