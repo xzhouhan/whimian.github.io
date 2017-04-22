@@ -34,6 +34,9 @@
 	<nav class="byline"><ul id="menu">
         </ul></nav><!-- /#menu -->
         <div class="downloads">
+          <a href="http://github.com/whimian" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/hao-yu-79ab2658" class="fa fa-LinkedIn"></a>
+          <a href="#" class="fa fa-Another social link"></a>
         </div>
         <hgroup>
           <h1>North Shore</h1>
@@ -43,17 +46,17 @@
 <section id="content">
 <ul id="post-list">
         <li><article class="hentry">
-            <header class="article-list"> <h2 class="entry-title"><a href="whimian.github.io/bu-tong-xi-tong-de-endoflinewen-ti.html" rel="bookmark" title="link to 不同系统的endOfLine问题">不同系统的endOfLine问题</a></h2>
+            <header class="article-list"> <h2 class="entry-title"><a href="./bu-tong-xi-tong-de-endofline-wen-ti.html" rel="bookmark" title="link to 不同系统的 endOfLine 问题">不同系统的 endOfLine 问题</a></h2>
                 <footer class="post-info">
                     <address class="vcard author">By
-                        <a class="url fn" href="whimian.github.io/author/yuhao.html">yuhao</a>
+                        <a class="url fn" href="./author/yuhao.html">yuhao</a>
                     </address>
                     <abbr class="published" title="2016-08-01T16:20:00+08:00">  on 01.08.2016 </abbr>
                 </footer><!-- /.post-info -->
 	    </header>
-                <div class="entry-content"> <p>最近由于要参加老师要求参加的中海油举办的 <span class="math">\(\pi-Frame\)</span> 软件编程比赛，准备复习一下C++，结果在使用<code>cin.getline()</code>接受输入时发现得到的<code>string</code>长度有问题，导致比较的时候不能得到预期结果。。。</p>
-<p><img alt="打字机" src="/images/green_typewriter.jpg"></p>
-<p>经过一番纠结，结果发现原来还是end of line问题。如果看过老式打印机就会知道，打字的时候想要换行要进行两个操作，一个是LF（line feed），就是拧旋钮把纸张向上移动一行；另一个是CR（carriage return），就是板一下把手把打字的那个头移动到一行的最前面。在ASCII码中，LF对应着10，而CR对应着13，一般用字符表示成<code>'\n'</code>和<code>'\r'</code>。</p>
+                <div class="entry-content"> <p> 最近由于要参加老师要求参加的中海油举办的 <span class="math">\(\pi-Frame\)</span> 软件编程比赛，准备复习一下 C++，结果在使用 <code>cin.getline()</code> 接受输入时发现得到的 <code>string</code> 长度有问题，导致比较的时候不能得到预期结果。。。</p>
+<p><img alt=" 打字机 " src="whimian.github.io/images/green_typewriter.jpg" style="width: 590px; height: auto; max-width: 100%;"/></p>
+<p> 经过一番纠结，结果发现原来还是 end of line 问题。如果看过老式打印机就会知道，打字的时候想要换行要进行两个操作，一个是 LF（line feed），就是拧旋钮把纸张向上移动一行；另一个是 CR（carriage return），就是板一下把手把打字的那个头移动到一行的最前面。在 ASCII 码中，LF 对应着 10，而 CR 对应着 13，一般用字符表示成 <code>'\n'</code> 和 <code>'\r'</code>。</p>
 <table>
 <thead>
 <tr>
@@ -66,27 +69,60 @@
 <tr>
 <td>10</td>
 <td>LF</td>
-<td>'\n'</td>
-</tr>
-<tr>
-<td>13</td>
-<td>CR</td>
-<td>'\r'</td>
-</tr>
-</tbody>
-</table>
-<p>由于历史原因，不同系统在处理字符行结尾的时候会加不同的字符。</p>
-<table>
-<thead>
-<tr>
-<th>Windows</th>
-<th>Unix-like</th>
-<th>Old Mac(pre-OSX)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>'\n\r' …</td></tr></tbody></table> </div><!-- /.entry-content -->
+<td>'\n' …</td></tr></tbody></table><script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}</script> </div><!-- /.entry-content -->
         </article></li>
 </ul><!-- /#posts-list -->
 <p class="paginator">
@@ -94,10 +130,10 @@
 </p>
 </section><!-- /#content -->
       <footer>
-	  <a href="whimian.github.io/pages/about.html" >About</a>
+	  <a href="./pages/about.html" >About</a>
 	  <div class="right-footer">
-	  <a href="whimian.github.io/categories.html" >Categories</a>
-	  <a href="whimian.github.io/tags.html" >Tags</a>
+	  <a href="./categories.html" >Categories</a>
+	  <a href="./tags.html" >Tags</a>
 	  </div>
       </footer>
 </body>

@@ -34,12 +34,15 @@
 	<nav class="byline"><ul id="menu">
         </ul></nav><!-- /#menu -->
         <div class="downloads">
+          <a href="http://github.com/whimian" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/hao-yu-79ab2658" class="fa fa-LinkedIn"></a>
+          <a href="#" class="fa fa-Another social link"></a>
         </div>
         <hgroup>
-          <h1>不同系统的endOfLine问题</h1>
+          <h1>不同系统的 endOfLine 问题</h1>
   <footer class="article-footer">
     <address class="vcard author">
-      By           <a class="url fn" href="whimian.github.io/author/yuhao.html">yuhao</a>
+      By           <a class="url fn" href="./author/yuhao.html">yuhao</a>
     </address>
     <abbr class="published" title="2016-08-01T16:20:00+08:00">
        on 01.08.2016
@@ -53,9 +56,9 @@
       </header>
 <section id="content" class="body article">
   <div class="entry-content">
-    <p>最近由于要参加老师要求参加的中海油举办的 <span class="math">\(\pi-Frame\)</span> 软件编程比赛，准备复习一下C++，结果在使用<code>cin.getline()</code>接受输入时发现得到的<code>string</code>长度有问题，导致比较的时候不能得到预期结果。。。</p>
-<p><img alt="打字机" src="/images/green_typewriter.jpg"></p>
-<p>经过一番纠结，结果发现原来还是end of line问题。如果看过老式打印机就会知道，打字的时候想要换行要进行两个操作，一个是LF（line feed），就是拧旋钮把纸张向上移动一行；另一个是CR（carriage return），就是板一下把手把打字的那个头移动到一行的最前面。在ASCII码中，LF对应着10，而CR对应着13，一般用字符表示成<code>'\n'</code>和<code>'\r'</code>。</p>
+    <p> 最近由于要参加老师要求参加的中海油举办的 <span class="math">\(\pi-Frame\)</span> 软件编程比赛，准备复习一下 C++，结果在使用 <code>cin.getline()</code> 接受输入时发现得到的 <code>string</code> 长度有问题，导致比较的时候不能得到预期结果。。。</p>
+<p><img alt=" 打字机 " src="./images/green_typewriter.jpg" style="width: 590px; height: auto; max-width: 100%;"/></p>
+<p> 经过一番纠结，结果发现原来还是 end of line 问题。如果看过老式打印机就会知道，打字的时候想要换行要进行两个操作，一个是 LF（line feed），就是拧旋钮把纸张向上移动一行；另一个是 CR（carriage return），就是板一下把手把打字的那个头移动到一行的最前面。在 ASCII 码中，LF 对应着 10，而 CR 对应着 13，一般用字符表示成 <code>'\n'</code> 和 <code>'\r'</code>。</p>
 <table>
 <thead>
 <tr>
@@ -77,7 +80,7 @@
 </tr>
 </tbody>
 </table>
-<p>由于历史原因，不同系统在处理字符行结尾的时候会加不同的字符。</p>
+<p> 由于历史原因，不同系统在处理字符行结尾的时候会加不同的字符。</p>
 <table>
 <thead>
 <tr>
@@ -94,9 +97,9 @@
 </tr>
 </tbody>
 </table>
-<p>因此，文本文件在不同系统下创建和使用时就会出现不兼容的问题。</p>
-<p>我的问题是，我在Windows上使用Cygwin，将gcc作为编译器，在输入字符时，接受的字符串是以<code>'\n\r'</code>结尾的，而<code>getline()</code>则以<code>'\n'</code>结尾的方式对其进行处理。</p>
-<p>解决的办法是在<code>getline()</code>中特别指定结束符，<code>getline(cin, text, '\r')</code>，可是这么写的代码在别的情形下貌似会出问题。期待有更加完美的解决方法。</p>
+<p> 因此，文本文件在不同系统下创建和使用时就会出现不兼容的问题。</p>
+<p> 我的问题是，我在 Windows 上使用 Cygwin，将 gcc 作为编译器，在输入字符时，接受的字符串是以 <code>'\n\r'</code> 结尾的，而 <code>getline()</code> 则以 <code>'\n'</code> 结尾的方式对其进行处理。</p>
+<p> 解决的办法是在 <code>getline()</code> 中特别指定结束符，<code>getline(cin, text, '\r')</code>，可是这么写的代码在别的情形下貌似会出问题。期待有更加完美的解决方法。</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -163,10 +166,10 @@
 <div class="neighbors">
 </div>
       <footer>
-	  <a href="whimian.github.io/pages/about.html" >About</a>
+	  <a href="./pages/about.html" >About</a>
 	  <div class="right-footer">
-	  <a href="whimian.github.io/categories.html" >Categories</a>
-	  <a href="whimian.github.io/tags.html" >Tags</a>
+	  <a href="./categories.html" >Categories</a>
+	  <a href="./tags.html" >Tags</a>
 	  </div>
       </footer>
 </body>
