@@ -164,7 +164,57 @@
         var inTxt = "小姐姐，迷路了吗？";
         var txtColor = "#fff";
         window.onload = function () {
-            drawKumamon();
+            // drawKumamon();
+            drawKumamon_without_apple_face();
+        }
+        function drawKumamon_without_apple_face() {
+            var ku = document.getElementById("kumamon");
+            if (ku.getContext) {
+                var ctx = ku.getContext("2d");
+                //绘图代码
+                paintCircle(ctx, 250, 224, 191, 2, "#fff");
+                bearBody(ctx, 128, 241, 245, 40, 334, 140, "#000");
+                //左耳朵
+                paintCircle(ctx, 138, 120, 28, 2, "#000");
+                paintCircle(ctx, 138, 120, 15, 2, "#fff");
+                //右耳朵
+                paintCircle(ctx, 365, 120, 28, 2, "#000");
+                paintCircle(ctx, 365, 120, 15, 2, "#fff");
+                //脸
+                paintOval(ctx, 250, 210, 140, 118, 2, "#000");
+                //眉毛
+                bearEyebrow(ctx, 20, 10, 168, 133, 130, 32, "#fff");
+                bearEyebrow(ctx, 20, 10, 298, 130, 133, 32, "#fff");
+                //左眼
+                ctx.moveTo(160, 170);
+                paintRotatedOval(ctx, 186, 170, 26, 27, 2, "#fff", 90);
+                ctx.moveTo(182, 170);
+                paintOval(ctx, 192, 170, 4, 10, 2, "#000");
+                //右眼
+                ctx.moveTo(273, 170);
+                paintRotatedOval(ctx, 300, 170, 26, 27, 2, "#fff", 90);
+                ctx.moveTo(308, 170);
+                paintOval(ctx, 312, 170, 4, 10, 2, "#000");
+                //嘴区域
+                ctx.moveTo(186, 243);
+                paintOval(ctx, 251, 243, 65, 52, 2, "#fff");
+                //嘴
+                paintQuadratic(ctx, 240, 196, 253, 110, "#000");
+                paintQuadratic(ctx, 290, 196, 253, 110, "#000");
+                //鼻子
+                ctx.moveTo(228, 217);
+                paintOval(ctx, 248, 217, 20, 17, 1, "#000");
+                ctx.moveTo(228, 142);
+                paintRotatedOval(ctx, 248, 142, 20, 13, 1, "#000", 180);
+                //腮红
+                // ctx.moveTo(99, 227);
+                // paintCircle(ctx, 133, 227, 34, 2, "rgb(255,0,2)");
+                // paintCircle(ctx, 366, 227, 34, 2, "rgb(255,0,2)");
+                //文字
+                ctx.globalCompositeOperation = "source-over";
+                paintText(ctx, inTxt, txtColor);
+                paintBackground(ctx, v_color);
+            }
         }
 
     </script>
@@ -176,17 +226,18 @@
                 ctx.clearRect(0, 0, can.width, can.height);
             }
         };
-
         $("canvas").hover(function(){
             clear(document.getElementById('kumamon'));
-            v_color="rgb(0,0,0)";
-            inTxt = "来部长办公室吧";
+            // v_color="rgb(0,0,0)";
+            inTxt = "腮红显胖";
+            // drawKumamon_without_apple_face();
             drawKumamon();
             }, function(){
             clear(document.getElementById('kumamon'));
-            v_color="rgb(127,0,0)";
+            // v_color="rgb(127,0,0)";
             inTxt = "小姐姐，迷路了吗？";
-            drawKumamon();
+            // drawKumamon();
+            drawKumamon_without_apple_face();
         });
     </script>
 </body>
